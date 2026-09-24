@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiPatita Shop - Tienda de Articulos</title>
+    
+</head>
+<body>
+    <header>
+        <h1>MiPatita Shop 🐾</h1>
+        <p>Articulos para Mascotas 🐾</p>
+    </header>
+    
+     <nav class="main-nav">
+        <a href="index.html">Inicio</a> |
+        <a href="productos.html">Productos</a> |
+        <a href="nosotros.html">Nosotros</a> |
+        <a href="contactanos.html">Contactanos</a>
+    </nav>
+
+    <main>
+
+        <section id="Contacto">
+
+            <h2>Contáctanos 🐾</h2>
+
+            <p>
+                Si tienes alguna duda, sugerencia o quieres saber más sobre
+                MiPatita Shop, puedes enviarnos un mensaje a través del siguiente
+                formulario.
+            </p>
+
+
+            <form id="formularioContacto">
+
+
+                <!-- NOMBRE -->
+
+                <label for="nombre">Nombre:</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Escribe tu nombre"
+                    autocomplete="name"
+                >
+
+                <p id="errorNombre"></p>
+
+
+
+                <!-- CORREO -->
+
+                <label for="correo">Correo:</label>
+
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.cl"
+                    autocomplete="email"
+                >
+
+                <p id="errorCorreo"></p>
+
+
+
+                <!-- TIPO DE MASCOTA -->
+
+                <label for="mascota">Tipo de mascota:</label>
+
+                <input
+                    type="text"
+                    id="mascota"
+                    name="mascota"
+                    list="listaMascotas"
+                    placeholder="Selecciona o escribe una mascota"
+                >
+
+
+                <datalist id="listaMascotas">
+
+                    <option value="Perro">
+                    <option value="Gato">
+                    <option value="Conejo">
+                    <option value="Hurón">
+
+                </datalist>
+                <p id="errorMascota"></p>
+                <!-- MENSAJE -->
+
+                <label for="mensaje">Mensaje:</label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="5"
+                    placeholder="Escribe tu consulta aquí"
+                ></textarea>
+
+                <p id="errorMensaje"></p>
+
+
+
+                <!-- BOTÓN -->
+
+                <button type="submit">
+                    Enviar Mensaje
+                </button>
+
+
+                <!-- MENSAJE DE ÉXITO -->
+
+                <p id="mensajeExito"></p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+     <footer>
+        <p>&copy; 2026 Fullstack II - MiPatita Shop | Cony, Maxi, Cami, Rodrigo</p>
+    </footer>
+
+</body>
+
+</html>
