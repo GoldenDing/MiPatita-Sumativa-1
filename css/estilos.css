@@ -1,36 +1,27 @@
-/* --- Variables colores --- */
-:root {
-    --verde-bosque: #2D5A27; 
-    --mostaza: #E6A100;
-    --gris-claro: #f4f4f4;
-    --texto: #333;
-    --blanco: #ffffff;
-}
-
 /* --- Estilos general --- */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--gris-claro);
-    color: var(--texto);
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 h1, h2, h3 {
-    color: var(--verde-bosque);
+    color: #2D5A27;
 }
 
 /* --- Encabezado --- */
 header {
-    background-color: var(--verde-bosque);
-    color: var(--blanco);
+    background-color: #2D5A27;
+    color: #ffffff;
     text-align: center;
     padding: 25px 0;
 }
 
 header h1 {
-    color: var(--mostaza);
+    color: #E6A100;
     margin: 0;
     font-size: 2.5rem;
 }
@@ -45,22 +36,20 @@ header p {
     background-color: #1e3a1a;
     text-align: center;
     padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .main-nav a {
-    color: var(--blanco);
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
     margin: 0 5px;
     border-radius: 5px;
-    transition: background 0.3s ease;
 }
 
 .main-nav a:hover {
-    background-color: var(--mostaza);
-    color: var(--texto);
+    background-color: #E6A100;
+    color: #333;
 }
 
 /* --- Contenedor Principal --- */
@@ -68,9 +57,8 @@ main {
     max-width: 1100px;
     margin: 30px auto;
     padding: 20px;
-    background-color: var(--blanco);
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
 /* --- Catalogo de Productos --- */
@@ -82,18 +70,12 @@ main {
 }
 
 article {
-    background-color: var(--blanco);
+    background-color: #ffffff;
     border: 1px solid #eaeaea;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     width: 250px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    transition: transform 0.2s ease;
-}
-
-article:hover {
-    transform: translateY(-5px);
 }
 
 article img {
@@ -107,14 +89,14 @@ article img {
 .precio {
     font-size: 1.6rem;
     font-weight: bold;
-    color: var(--mostaza);
+    color: #E6A100;
     margin: 10px 0;
 }
 
 /* --- Botones --- */
 button {
-    background-color: var(--verde-bosque);
-    color: var(--blanco);
+    background-color: #2D5A27;
+    color: #ffffff;
     border: none;
     padding: 12px 20px;
     font-size: 1rem;
@@ -122,12 +104,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
-    transition: background 0.3s ease;
 }
 
 button:hover {
-    background-color: var(--mostaza);
-    color: var(--texto);
+    background-color: #E6A100;
+    color: #333;
 }
 
 /* --- Formulario de Contacto --- */
@@ -139,7 +120,7 @@ form {
 
 label {
     font-weight: bold;
-    color: var(--verde-bosque);
+    color: #2D5A27;
     display: block;
     margin-top: 15px;
 }
@@ -153,10 +134,10 @@ input, textarea, select {
     box-sizing: border-box;
 }
 
-/* --- Pie de Página --- */
+/* --- Pie de Pagina --- */
 footer {
-    background-color: var(--verde-bosque);
-    color: var(--blanco);
+    background-color: #2D5A27;
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
@@ -175,5 +156,95 @@ footer {
     article {
         width: 100%;
         max-width: 350px;
+    }
+}
+
+.intro-catalogo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.col-8 {
+    flex: 2;
+    padding: 10px;
+}
+
+.col-4 {
+    flex: 1;
+    padding: 10px;
+}
+
+.titulo-seccion {
+    border-bottom: 2px solid #457B9D;
+    padding-bottom: 5px;
+}
+
+#carrito {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+#carrito h3 {
+    margin-top: 0;
+}
+
+#listaCarrito {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaCarrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+#listaCarrito button {
+    width: auto;
+    padding: 4px 10px;
+    font-size: 0.85rem;
+}
+
+#vaciarCarrito {
+    padding: 10px;
+}
+
+#errorNombre,
+#errorCorreo,
+#errorMascota,
+#errorMensaje {
+    color: #c0392b;
+    font-size: 0.9rem;
+    margin: 5px 0 0 0;
+}
+
+#contadorMensaje {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+#mensajeExito {
+    color: #2D5A27;
+    font-weight: bold;
+}
+
+.video-nosotros {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.video-nosotros h3 {
+    color: #457B9D;
+}
+
+@media (max-width: 768px) {
+    .col-8,
+    .col-4 {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
