@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es">
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiPatita Shop - Tienda de Articulos</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <meta name="description" content="Comida, Ropa y accesorios de MiPatita Shop">
+    <title>Productos - MiPatita Shop</title>
+    <!-- comparte el diseño de las otras páginas -->
+    <link rel="stylesheet" href="assets/style.css"> 
 </head>
+<body> 
 
-<body>
-
+    <!-- Encabezado alineado con las demás páginas -->
     <header>
         <h1>MiPatita Shop 🐾</h1>
-        <p>Todo lo necesario para tus mascotas</p>
+        <p>Artículos para Mascotas 🐾</p>
     </header>
 
+    <!-- Menú de navegación unificado -->
     <nav class="main-nav">
         <a href="index.html">Inicio</a> |
         <a href="productos.html">Productos</a> |
@@ -21,27 +24,98 @@
         <a href="contactanos.html">Contáctanos</a>
     </nav>
 
+    <!-- Contenido Principal -->
     <main>
-      <section id="Servicios">
-    <h2>Nuestros Servicios</h2>
+        <section style="text-align: center; margin-bottom: 30px;"> 
+            <h2>Catálogo de Productos</h2>
+            <p>Descubre nuestra selección de alimentos premium y accesorios. Ofrecemos opciones de alta digestibilidad, perfectas para cuidar el pelaje y la piel de razas delicadas como el Shar Pei, además de deliciosas recetas de salmón deshidratado para mantener a tu gato sano y feliz.</p>
+        </section>
 
-    <article>
-        <h3>Cuidado de mascotas</h3>
-        <p>Te ayudamos a mantener una rutina de cuidado para tu mascota.</p>
-    </article>
+        <!-- Contenedor general para los productos y el carrito -->
+        <div class="fila" style="display: flex; flex-wrap: wrap; justify-content: space-around;"> 
+            
+            <!-- Sección de Comidas -->
+            <div class="col-8 col-s-12" style="flex: 2; padding: 10px;">
+                <section>
+                    <h3 style="border-bottom: 2px solid #457B9D; padding-bottom: 5px;">Alimento para Cachorros y Gatos</h3>
+                    
+                    <div class="fila" style="display: flex; gap: 20px; margin-bottom: 20px;">
+                        <article style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; text-align: center;">
+                            <img src="assets/Comida1.jpg" alt="Comida Purina de alta calidad" width="200" height="150" style="object-fit: cover;">
+                            <p class="categoria" style="color: gray; font-size: 12px;">Comidas Secas</p>
+                            <h4>Purina Pro Plan Cachorros</h4>
+                            <p>Formula rica en pollo y arroz. Ideal para un crecimiento fuerte y un sistema inmunológico protegido.</p>
+                            <p class="precio" style="font-weight: bold; color: #E6A100;">$22.990</p>
+                            <button type="button" class="agregar" data-nombre="Comida Purina" data-precio="22990">Agregar al carrito</button>
+                        </article>
 
-    <article>
-        <h3>Alimentación</h3>
-        <p>Información para ayudarte a organizar sus comidas y horarios.</p>
-    </article>
+                        <article style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; text-align: center;">
+                            <img src="assets/Comida2.jpg" alt="Comida Royal Canin" width="200" height="150" style="object-fit: cover;">
+                            <p class="categoria" style="color: gray; font-size: 12px;">Comidas Húmedas</p>
+                            <h4>Royal Canin Sensible</h4>
+                            <p>Contiene vitaminas esenciales y prebióticos. Excelente para digestiones sensibles y aprobado por los más exigentes.</p>
+                            <p class="precio" style="font-weight: bold; color: #E6A100;">$24.990</p>
+                            <button type="button" class="agregar" data-nombre="Comida Royal" data-precio="24990">Agregar al carrito</button>
+                        </article>
+                    </div>
+                </section>
 
-</section>
+                <section>
+                    <h3 style="border-bottom: 2px solid #457B9D; padding-bottom: 5px;">Alimento para Adultos</h3>
+                    
+                    <div class="fila" style="display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
+                        <article style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; text-align: center;">
+                            <img src="assets/Comida3.jpg" alt="Comida Ideal para perros Adultos" width="200" height="150" style="object-fit: cover;">
+                            <p class="categoria" style="color: gray; font-size: 12px;">Comida_Adultos</p>
+                            <h4>Purina Salmón (6 unidades)</h4>
+                            <p>Elaborado con salmón real. Protege las articulaciones y mantiene el pelaje brillante.</p>
+                            <p class="precio" style="font-weight: bold; color: #E6A100;">$32.990</p>
+                            <button type="button" class="agregar" data-nombre="Purina Adultos (6)" data-precio="32990">Agregar al carrito</button>
+                        </article>
+                        
+                        <article style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; text-align: center;">
+                            <img src="assets/Comida4.jpg" alt="Champion Dog Adultos" width="200" height="150" style="object-fit: cover;">
+                            <p class="categoria" style="color: gray; font-size: 12px;">Comida_Adultos</p>
+                            <h4>Champion Dog Carnes (6)</h4>
+                            <p>Mix de carnes premium que aporta la energía necesaria para la rutina diaria de tu mascota.</p>
+                            <p class="precio" style="font-weight: bold; color: #E6A100;">$58.490</p>
+                            <button type="button" class="agregar" data-nombre="Champion Dog Adultos (6)" data-precio="58490">Agregar al carrito</button>
+                        </article>
+
+                        <article style="border: 1px solid #ccc; padding: 15px; border-radius: 8px; text-align: center;">
+                            <img src="assets/Comida5.jpg" alt="Purina Adultos" width="200" height="150" style="object-fit: cover;">
+                            <p class="categoria" style="color: gray; font-size: 12px;">Snacks y Premios</p>
+                            <h4>Bocados Rellenos (12)</h4>
+                            <p>Crujientes por fuera y suaves por dentro. El premio perfecto para el entrenamiento.</p>
+                            <p class="precio" style="font-weight: bold; color: #E6A100;">$42.990</p>
+                            <button type="button" class="agregar" data-nombre="Purina Snacks (12)" data-precio="42990">Agregar al carrito</button>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sección del Carrito de Compras -->
+            <div class="col-4 col-s-12" style="flex: 1; padding: 10px;">
+                <aside style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; border: 1px solid #ddd;">
+                    <h3 style="margin-top: 0;">🛒 Tu carrito</h3>
+                    <p>Productos: <strong id="cantidadCarrito">0</strong></p>
+                    <p>Total: <strong id="totalCarrito">$0</strong></p>
+                    <ul id="listaCarrito" style="list-style-type: none; padding: 0;"></ul>
+                    <button type="button" id="vaciarCarrito" style="width: 100%; padding: 10px; background-color: #2D5A27; color: white; border: none; border-radius: 5px; cursor: pointer;">Vaciar carrito</button>
+                    <p id="mensajeCarrito"></p>
+                </aside>
+            </div>
+
+        </div>
     </main>
 
+    <!-- Pie de página alineado con las demás páginas -->
     <footer>
         <p>&copy; 2026 Fullstack II - MiPatita Shop | Cony, Maxi, Cami, Rodrigo</p>
     </footer>
 
+    <!-- JAVASCRIPT -->
+    <script src="js/productos.js"></script>
+
 </body>
 </html>
->>>>>>> 58e196e (Avance de 1 hora)
